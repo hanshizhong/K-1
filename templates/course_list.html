@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+<!--  -->
+{% block styles %}
+<link rel="stylesheet" href="/course_list.css" />
+{% endblock %}
+
+<!--  -->
+{% block page_content %}
+<div class="paper">
+    <div class="paper-head">
+        <div id="new-btn" class="btn">新建课程</div>
+    </div>
+    <div class="paper-body">
+        <table id="course-table" class="table" >
+            <thead>
+                <tr>
+                    <th class="col-cou_name">课程名称</th>
+                    <th class="col-cou_no">课程号</th>
+                    <th class="col-place">上课地点</th>
+                    <th class="col-sktime">上课时间</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="course-editor dialog-background">
+        <form class="dialog">
+            <div class="dialog-head"></div>
+            <div class="dialog-body">
+                <input type="hidden" name="cou_sn" />
+                <label>课程号: </label>
+                <input type="text" name="cou_no" />
+                
+                <label>课程名称: </label>
+                <input type="text" name="cou_name" />
+                <label>上课地点: </label>
+                <input type="text" name="place" />
+                <label>上课时间: </label>
+                <input type="text" name="sktime" />
+            </div>
+            <div class="dialog-footer">
+                <a id="save-btn" class="btn">保存</a>
+                <a id="close-btn" class="btn">关闭</a>
+            </div>
+        </form>
+    </div>
+    <div class="comfirmation-dialog dialog-background">
+        <form class="dialog">
+            <div class="dialog-head"></div>
+            <div class="dialog-body">
+                <div id="message"></div>
+            </div>
+            <div class="dialog-footer">
+                <a id="ok-btn" class="btn">确定</a>
+                <a id="cancel-btn" class="btn">放弃</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="paper1">
+    <form class="chengjidan">
+        <div class="paper1-head"></div>
+        <div class="paper1-body">
+            <table id="course_grade-table" class="table">
+                <thead>
+                    <tr>
+                        
+                        <th class="col-stu_name">学生姓名</th>
+                        <th class="col-grade">成绩</th>
+                        
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="dialog-footer">
+                <a id="back-btn" class="btn">返回</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/course.js"></script>
+{% endblock %}

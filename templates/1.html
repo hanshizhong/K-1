@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+<!--  -->
+{% block styles %}
+<link rel="stylesheet" href="/course_list.css" />
+{% endblock %}
+
+<!--  -->
+{% block page_content %}
+<div class="paper">
+    <div class="paper-head">
+        <div id="new-btn" class="btn">返回</div>
+    </div>
+    <div class="paper-body">
+        <table id="course-table" class="table">
+            <thead>
+                <tr>
+                    <th class="col-cou_name">课程名称</th>
+                    <th class="col-stu_name">学生姓名</th>
+                    <th class="col-grade">成绩</th>
+                
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+   
+<script src="/course.js"></script>
+{% endblock %}
+

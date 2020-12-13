@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+<!--  -->
+{% block styles %}
+<link href="/student_list.css" rel="stylesheet" />
+{% endblock %}
+
+<!--  -->
+{% block page_content %}
+<div class="panel">
+
+<div class="dialog">
+    <div class="paper">
+        <table>
+            <tr>
+                <th class="col-stu_name">姓名</th>
+                <th class="col-stu_no">课程</th>
+                <th class="col-gender">成绩</th>
+            </tr>
+            {% for item in items %}
+            <tr>
+                <td class="col-stu_name">{{ item.stu_name }}</td>
+                <td class="col-stu_no">{{ item.cou_name }}</td>
+                <td class="col-gender">{{ item.grade }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="btn">
+            <a href="/chachengji">返回</a>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

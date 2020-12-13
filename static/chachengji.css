@@ -1,0 +1,23 @@
+
+td.mingzi {
+    display: flex;
+    padding: 0 1em;
+    
+    text-align: center;
+}
+
+.btn {
+    padding: 2px 15px;
+    background-color: darkcyan;
+    text-align: center;
+
+}
+
+.ctrlbar {
+    justify-content: center;
+    display: flex;
+}
+
+.col-stu_name{
+    text-align: center;
+}

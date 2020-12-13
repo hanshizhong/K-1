@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block styles %}
+<link href="/chachengji.css" rel="stylesheet" />
+{% endblock %} {% block page_content %}
+<div class="paper">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="col-stu_name">姓名</th>
+                <th class="chengji">成绩查询</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stu in students %}
+            <tr>
+                <td class="col-stu_name">{{ stu.stu_name }}</td>
+            
+            <td>
+            <div class="ctrlbar">
+            <div class="btn">
+                <a href="/chachengji/edit/{{stu.stu_sn}}">查询</a>
+            </div>
+            </div>
+            </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

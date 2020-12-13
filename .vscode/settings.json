@@ -1,0 +1,25 @@
+{
+    "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "postges@localhost",
+            "database": "postgres",
+            "username": "postgres",
+            "password": ""
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "examdbo@localhost",
+            "database": "examdb",
+            "username": "examdbo",
+            "password": ""
+        }
+    ]
+}
